@@ -1,0 +1,38 @@
+{
+  "name": "twt-about-me",
+  "version": "1.0.0",
+  "description": "a twitter bot that receives a DM and retweet about it",
+  "main": "App.js",
+  "scripts": {
+    "test": "meaw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekohex/twt-about-me.git"
+  },
+  "keywords": [
+    "twt",
+    "twitter",
+    "bots"
+  ],
+  "author": "Shady Khalifa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shekohex/twt-about-me/issues"
+  },
+  "homepage": "https://github.com/shekohex/twt-about-me#readme",
+  "dependencies": {
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.45",
+    "nodemon": "^1.12.1",
+    "typescript": "^2.5.3",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "tsc": "^1.20150623.0",
+    "typescript-eslint-parser": "^8.0.0"
+  }
+}
