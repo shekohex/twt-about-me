@@ -31,6 +31,7 @@
   "dependencies": {
     "@types/dotenv": "^4.0.1",
     "dotenv": "^4.0.0",
+    "repeat": "0.0.6",
     "rimraf": "^2.6.2",
     "tsc": "^1.20150623.0",
     "twit": "^2.2.9",

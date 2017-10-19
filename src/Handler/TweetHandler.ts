@@ -13,11 +13,13 @@ class TweetHandler {
      *
      * @return {tweet.data.id} number
      */
-    public static async tweet(text: string): Promise<number> {
+    public static tweet(text: string): any {
         try {
-            const tweet: any = await Bot.post('statuses/update', {status: text})
-            log.debug(`OK#${tweet.data.id}`)
-            return tweet.data.id
+            Bot.post('statuses/update', {status: text}).then(tweet => {
+                log.debug(`OK#${tweet.data.id}`)
+                return tweet.data.id
+            })
+
         } catch (error) {
             throw error
         }
@@ -31,9 +33,9 @@ class TweetHandler {
      * @param text: the text of the reply
      * @param id: the id of the tweet
      */
-    public static async reply(id: number, text: string) {
+    public static reply(id: number, text: string) {
         try {
-            await Bot.post('statuses/update', {status: text, in_reply_to_status_id: id})
+            Bot.post('statuses/update', {status: text, in_reply_to_status_id: id})
             log.debug('OK !')
         } catch (error) {
             throw error

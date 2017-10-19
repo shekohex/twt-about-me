@@ -12,14 +12,12 @@ class StreamHandler {
      *
      * @return {Stream} object
      */
-    public static async onDirectMessages(): Promise<object> {
+    public static onDirectMessages(): any {
         const stream = Bot.stream('user')
         try {
-           return new Promise(resolve => {
-               stream.on('direct_message', data => {
-                   resolve(data)
-               })
-           })
+            stream.on('direct_message', data => {
+                return data
+            })
         } catch(error) {
             log.error(error)
             throw error
@@ -93,6 +91,28 @@ class StreamHandler {
         const stream = Bot.stream('user')
         try {
             return await stream.on('quoted_tweet')
+        } catch(error) {
+            log.error(error)
+            throw error
+        }
+    }
+    /**
+     * Fired when someone Favorite my tweet
+     *
+     * @class StreamHandler
+     * @method onFavorite
+     * @static
+     *
+     * @return {Stream} object
+     */
+    public static async onDisconnect(): Promise<object> {
+        const stream = Bot.stream('statuses/sample')
+        try {
+            return new Promise(resolve => {
+                stream.on('disconnect', data => {
+                    resolve(data)
+                })
+            })
         } catch(error) {
             log.error(error)
             throw error
