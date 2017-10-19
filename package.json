@@ -34,6 +34,7 @@
     "node-schedule": "^1.2.5",
     "rimraf": "^2.6.2",
     "twit": "^2.2.9",
+    "tsc": "^1.20150623.0",
     "winston": "^2.4.0"
   },
   "devDependencies": {
