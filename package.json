@@ -31,6 +31,7 @@
   "dependencies": {
     "@types/dotenv": "^4.0.1",
     "dotenv": "^4.0.0",
+    "node-schedule": "^1.2.5",
     "rimraf": "^2.6.2",
     "twit": "^2.2.9",
     "winston": "^2.4.0"
