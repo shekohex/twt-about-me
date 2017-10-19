@@ -4,7 +4,14 @@
   "description": "a twitter bot that receives a DM and retweet about it",
   "main": "App.js",
   "scripts": {
-    "test": "meaw"
+    "start": "node ./dist/App.js",
+    "prestart": "npm run build",
+    "dev": "concurrently \"npm run watch\" \"nodemon ./dist/App.js\"",
+    "predev": "npm run build",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "build:clean": "./node_modules/rimraf/bin.js ./dist && tsc",
+    "lint": "eslint src --ext ts"
   },
   "repository": {
     "type": "git",
@@ -22,17 +29,24 @@
   },
   "homepage": "https://github.com/shekohex/twt-about-me#readme",
   "dependencies": {
-    "twit": "^2.2.9"
+    "@types/dotenv": "^4.0.1",
+    "dotenv": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "twit": "^2.2.9",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^8.0.45",
-    "nodemon": "^1.12.1",
-    "typescript": "^2.5.3",
+    "@types/winston": "^2.3.6",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-promise": "^3.6.0",
+    "nodemon": "^1.12.1",
     "tsc": "^1.20150623.0",
+    "concurrently": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3",
     "typescript-eslint-parser": "^8.0.0"
   }
 }
