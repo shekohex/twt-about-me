@@ -48,7 +48,7 @@
     "nodemon": "^1.12.1",
     "tsc": "^1.20150623.0",
     "concurrently": "^3.5.0",
-    "ts-node": "^3.3.0",
+    "ts-node": "^4.0.0",
     "typescript": "^2.5.3",
     "typescript-eslint-parser": "^9.0.0"
   }
