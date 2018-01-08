@@ -39,7 +39,7 @@
     "winston": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.45",
+    "@types/node": "^9.3.0",
     "@types/winston": "^2.3.6",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
