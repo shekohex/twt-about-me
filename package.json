@@ -50,6 +50,6 @@
     "concurrently": "^3.5.0",
     "ts-node": "^4.0.0",
     "typescript": "^2.5.3",
-    "typescript-eslint-parser": "^10.0.0"
+    "typescript-eslint-parser": "^14.0.0"
   }
 }
