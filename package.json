@@ -52,6 +52,6 @@
     "concurrently": "^3.5.0",
     "ts-node": "^7.0.0",
     "typescript": "^2.5.3",
-    "typescript-eslint-parser": "^16.0.0"
+    "typescript-eslint-parser": "^19.0.1"
   }
 }
