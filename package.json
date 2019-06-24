@@ -45,7 +45,7 @@
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint": "^5.0.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-promise": "^3.6.0",
     "nodemon": "^1.12.1",
     "tsc": "^1.20150623.0",
